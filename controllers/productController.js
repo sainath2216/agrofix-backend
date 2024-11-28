@@ -22,6 +22,8 @@ exports.addProduct = async (req, res) => {
     }
 };
 
+
+
 // Delete a product
 exports.deleteProduct = async (req, res) => {
     try {
@@ -31,3 +33,4 @@ exports.deleteProduct = async (req, res) => {
         res.status(500).json({ error: "Failed to delete product" });
     }
 };
+

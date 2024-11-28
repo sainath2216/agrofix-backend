@@ -10,7 +10,7 @@ exports.placeOrder = async (req, res) => {
     } catch (error) {
         res.status(500).json({ error: "Failed to place order" }); 
     }
-};
+}; 
 
 // Get order status by ID
 exports.getOrderStatus = async (req, res) => {
@@ -39,3 +39,4 @@ exports.updateOrderStatus = async (req, res) => {
         res.status(500).json({ error: "Failed to update order status" });
     }
 };
+
